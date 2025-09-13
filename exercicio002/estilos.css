@@ -1,0 +1,58 @@
+@import url('../padrao.css');
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: #415a77;
+}
+
+.calculadora .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.calculadora .visor {
+    flex: 1;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 10px;
+
+    text-align: right;
+    font-size: 60px;
+    color: #444;
+    background-color: aliceblue;
+}
+
+.calculadora .calcBtn {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin: 4px;
+
+    border: 0;
+    border-radius: 10px;
+
+    color: #444;
+    background-color: aliceblue;
+}
+
+.calculadora .calcBtn:hover {
+    filter: brightness(0.8);
+}
+
+.calculadora .btnSpecial {
+    color: aliceblue;
+    background-color: orangered;
+}
+
+.calculadora .calcRes {
+    /* width: 94px; */
+}
+
