@@ -6,7 +6,7 @@ calcular.addEventListener('click', e => {
     e.preventDefault()
 
     // Seletores
-    const inputVendedor = Number(document.querySelector("#vendedor").value)
+    const inputVendedor = document.querySelector("#vendedor").value
     const inputJaneiro = Number(document.querySelector("#janeiro").value)
     const inputFevereiro = Number(document.querySelector("#fevereiro").value)
     const inputMarco = Number(document.querySelector("#marco").value)
