@@ -9,13 +9,12 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
     height: 100vh;
 
     font-family: "Inter";
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 300;
     color: #fff;
     background-color: #1b263b;
@@ -30,7 +29,7 @@ blockquote {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 300;
 }
 
@@ -44,8 +43,42 @@ h1 {
 .box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
-    max-width: 1000px;
+    max-width: 600px;
     width: calc(100% - 20px);
+}
+
+.titulo {
+    margin-top: 40px;
+    padding: 10px;
+    /* border-bottom: solid 4px #333; */
+    border-radius: 20px 20px 0 0;
+    background-color: #00a6fb;
+}
+
+.titulo h1 {
+    text-align: center;
+    text-shadow: 3px 3px 6px #222;
+}
+
+.linha {
+    height: 4px;
+    margin: 10px -10px;
+    background-color: #32444d;
+}
+
+.linha.ltopo {
+    margin-top: -10px;
+}
+
+.linha.lcorpo {
+    margin: 20px 40px;
+    border-radius: 10px;
+}
+
+.corpo {
+    height: 300px;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    background-color: #415a77;
 }
