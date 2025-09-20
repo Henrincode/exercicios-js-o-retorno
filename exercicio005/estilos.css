@@ -1,0 +1,25 @@
+@import url('../padrao.css');
+
+.corpo select {
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+    border: 0;
+    border-radius: 20px;
+
+    font-size: 24px;
+    text-align: center;
+}
+
+.mensagem {
+    font-size: 24px;
+    text-align: center;
+}
+
+.mensagem img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 20px;
+}
