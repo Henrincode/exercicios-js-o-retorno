@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="estilos.css">
+    <title>Exercício 006</title>
+</head>
+
+<body>
+
+    <!-- titulo -->
+    <div class="titulo box">
+        <h1 class="titulo">Exercicio 006</h1>
+    </div>
+    <!-- corpo do conteúdo -->
+    <div class="corpo box">
+        <div class="linha ltopo"></div>
+        <form>
+            <div class="row">
+                <label for="fnome">Nome</label>
+                <input name="nome" id="fnome" type="text">
+            </div>
+            <div class="row">
+                <label for="fsemanal">Carga horária semanal</label>
+                <input name="semanal" id="fsemanal" type="number" min="0">
+            </div>
+            <div class="row">
+                <label for="ftrabalhada">Carga horária trabalhada</label>
+                <input name="trabalhada" id="ftrabalhada" type="number" min="0">
+            </div>
+            <div class="row">
+                <button>Calcular</button>
+            </div>
+            <div class="row">
+                <u class="resposta"></u>
+            </div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

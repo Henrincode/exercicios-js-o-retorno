@@ -1,0 +1,56 @@
+@import url('../padrao.css');
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+form .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+form label {
+    /* width: ; */
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+    font-size: 18px;
+    text-align: center;
+    background-color: dodgerblue;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-radius: 0 20px 20px 20px;
+    font-family: "Inter";
+    font-size: 24px;
+    color: #444;
+    background-color: aliceblue;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 24px;
+    color: aliceblue;
+    background-color: dodgerblue;
+}
+
+button:hover {
+    background-color: cornflowerblue;
+}
+
+.resposta {
+    list-style: none;
+    text-decoration: none;
+    text-align: left;
+}
