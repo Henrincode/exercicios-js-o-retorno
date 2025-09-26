@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="estilos.css">
+    <title>Exercício 008</title>
+</head>
+
+<body>
+
+    <!-- titulo -->
+    <div class="titulo box">
+        <h1 class="titulo">Exercicio 008</h1>
+    </div>
+    <!-- corpo do conteúdo -->
+    <div class="corpo box">
+        <div class="linha ltopo"></div>
+        <p>Efetuar uma das 4 operações matemáticas básicas.</p>
+        <div class="linha lcorpo"></div>
+        <!-- resolução do desafio -->
+        <form>
+            <div class="row">
+                <label for="valor1">Valor 1</label>
+                <input type="number" min="0" id="valor1">
+            </div>
+            <div class="row">
+                <label for="valor2">Valor 2</label>
+                <input type="number" min="0" id="valor2">
+            </div>
+            <div class="radios">
+                <span id="msg-operacao">Selecione a operação</span>
+                <input type="radio" name="operacao" id="adicao"> +
+                <input type="radio" name="operacao" id="subtracao"> -
+                <input type="radio" name="operacao" id="multiplicacao"> X
+                <input type="radio" name="operacao" id="divisao"> /
+            </div>
+            <button>Calcular</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
