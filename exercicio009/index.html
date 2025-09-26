@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="estilos.css">
+    <title>Exercício 009</title>
+</head>
+
+<body>
+
+    <!-- titulo -->
+    <div class="titulo box">
+        <h1 class="titulo">Exercicio 009</h1>
+    </div>
+    <!-- corpo do conteúdo -->
+    <div class="corpo box">
+        <div class="linha ltopo"></div>
+        <p>Exibindo uma mensagem várias vezes.</p>
+        <div class="linha lcorpo"></div>
+        <!-- resolução do desafio -->
+        <form>
+            <div class="row">
+                <label for="frase">Frase</label>
+                <input type="text" min="0" id="frase">
+            </div>
+            <div class="row">
+                <label for="repetir">Repetir</label>
+                <input type="number" min="0" id="repetir">
+            </div>
+            <button>Repetir</button>
+        </form>
+        <ol id="resultado"></ol>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
