@@ -30,7 +30,30 @@
 
         <div class="linha lcorpo"></div>
         <!-- resolução do desafio -->
-        <div id="resultado"></div>
+         <form action="">
+            <div class="row">
+                <label for="fnome">Nome</label>
+                <input id="fnome" type="text">
+            </div>
+            <div class="row">
+                <label for="fnota1">Nota 1</label>
+                <input id="fnota1" type="number" min="0">
+            </div>
+            <div class="row">
+                <label for="fnota2">Nota 2</label>
+                <input id="fnota2" type="text" min="0">
+            </div>
+            <div class="row">
+                <label for="fnota3">Nota 3</label>
+                <input id="fnota3" type="number" min="0">
+            </div>
+            <div class="row">
+                <label for="fnota4">Nota 4</label>
+                <input id="fnota4" type="number" min="0">
+            </div>
+            <button>Calcular média de notas</button>
+         </form>
+        <div id="resultado" class="container"></div>
     </div>
 
     <script src="app.js"></script>
