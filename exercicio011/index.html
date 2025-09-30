@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="estilos.css">
+    <title>Exercício 010</title>
+</head>
+
+<body>
+
+    <!-- titulo -->
+    <div class="titulo box">
+        <h1 class="titulo">Exercicio 011</h1>
+    </div>
+    <!-- corpo do conteúdo -->
+    <div class="corpo box">
+        <div class="linha ltopo"></div>
+        <p>
+            Nosso programa vai calcular a média de quantos números o usuário quiser digitar. Relembrando o cálculo da
+            média é a SOMA DE TODOS OS NÚMEROS DIVIDIDO PELA QUANTIDADE DE NÚMEROS. Por exemplo, se eu tenho 3 números,
+            a média é a soma desses 3 números dividido por 3.
+        </p>
+        <p>
+            - Calcular a média de N números.
+        </p>
+
+        <div class="linha lcorpo"></div>
+        <!-- resolução do desafio -->
+        <form action="">    
+            <div class="row">
+                <label for="fnumero">Número</label>
+                <input id="fnumero" data-nota type="number" min="0">
+            </div>
+            <button id="numero">Adicionar número</button>
+            <!-- <button id="calcular">Calcular a média</button> -->
+        </form>
+        <div id="resultado" class="container"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
