@@ -1,7 +1,6 @@
 const numeros = []
 
 const btnAdd = document.querySelector('#numero')
-const btnCalc = document.querySelector('#calcular')
 
 btnAdd.addEventListener('click', e => {
     e.preventDefault()
