@@ -1,0 +1,25 @@
+.cartao {
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+}
+
+.cartao:hover {
+    box-shadow: 0 5px 10px #000;
+    transform: translateY(-10px) scale(1.1);
+}
+
+/* Cores individuais para cada cartão */
+.cartao-1 { background-color: #6f42c1; } /* roxo */
+.cartao-2 { background-color: #198754; } /* verde */
+.cartao-3 { background-color: #0d6efd; } /* azul */
+.cartao-4 { background-color: #dc3545; } /* vermelho */
+.cartao-5 { background-color: #fd7e14; } /* laranja */
+.cartao-6 { background-color: #20c997; } /* verde água */
+.cartao-7 { background-color: #0dcaf0; } /* azul claro */
+.cartao-8 { background-color: #ffc107; } /* amarelo */
+.cartao-9 { background-color: #6610f2; } /* roxo escuro */
+.cartao-10 { background-color: #6c757d; } /* cinza */
+.cartao-11 { background-color: #198754; } /* verde */
+.cartao-12 { background-color: #0d6efd; } /* azul */
+.cartao-13 { background-color: #dc3545; } /* vermelho */
