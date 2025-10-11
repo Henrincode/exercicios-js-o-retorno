@@ -75,7 +75,7 @@ const pokemons = [
   "Dratini", "Dragonair", "Dragonite",
   "Mewtwo"
 ];
- 
+
 const pokemonImages = [
   "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png",
   "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png",
@@ -229,26 +229,32 @@ const pokemonImages = [
   "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/150.png"
 ];
 
-
-function fnListarPokemon() {
-  const i = fnRolarDados()
-    document.querySelector('#numero').innerHTML = `#${i+1}`
-    document.querySelector('#nome').innerHTML = pokemons[i]
-    document.querySelector('#foto').src = pokemonImages[i]
+function fnListaPokemon() {
+  let i = fnRolarDados()
+  document.getElementById("numero").innerHTML = `#${i + 1}`
+  document.getElementById("nome").innerHTML = pokemons[i]
+  document.getElementById("foto").src = pokemonImages[i]
 }
 
-function fnRolarDados(min = 0, max = 149) {
-    if (min > max) [min, max] = [max, min]
-    const numeroSorteado = Math.floor(Math.random() * (max-min + 1)) + min
-    console.log(numeroSorteado)
-    return numeroSorteado
+function fnRolarDados() {
+  let min = 0
+  let max = 149
+  let numeroSorteado = Math.floor(Math.random() * (max - min + 1)) + min
+
+  return numeroSorteado
+  // console.log(numeroSorteado)
 }
 
-const btnRevelar = document.querySelector('button')
+function fnEsconder() {
+  document.getElementById("numero").classList.add("esconder-numero")
+  document.getElementById("nome").classList.add("esconder-nome")
+  document.getElementById("foto").classList.add("esconder-pokemon")
+}
 
-btnRevelar.addEventListener('click', e => {
-  e.preventDefault()
-  document.querySelector('#foto').classList.toggle('revekar')
-
-})
-fnListarPokemon()
+function fnRevelar() {
+  document.getElementById("numero").classList.remove("esconder-numero")
+  document.getElementById("nome").classList.remove("esconder-nome")
+  document.getElementById("foto").classList.remove("esconder-pokemon")
+}
+fnListaPokemon()
+// fnEsconder()
